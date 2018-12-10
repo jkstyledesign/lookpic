@@ -1,0 +1,49 @@
+<div class="login-body">
+  <div class="col-md-3 m-auto">
+    <div class="login-box" *ngIf="login">
+      <h3 class="text-center">Login</h3>
+      <div class="input-group mt-3">
+        <input type="text" class="form-control" (ngModel)="userName">
+        <div class="input-group-addon">
+          <i class="fa fa-user"></i>
+        </div>
+      </div>
+      <div class="input-group mt-3">
+        <input type="password" class="form-control" (ngModel)="userPass">
+        <div class="input-group-addon">
+          <i class="fa fa-key"></i>
+        </div>
+      </div>
+      <div class="input-group mt-3">
+        <button type="button" class="btn btn-primary btn-block">Login</button>
+      </div>
+      <div class="input-group mt-3">
+          <button type="button" class="btn btn-link btn-block">Ragistor</button>
+        </div>
+    </div>
+    <div class="login-box" *ngIf="!login">
+        <h3 class="text-center">Ragistor now</h3>
+        <label>Name</label>
+        <div class="input-group mt-3">
+          <input type="text" class="form-control" (ngModel)="userName">
+          <div class="input-group-addon">
+            <i class="fa fa-user"></i>
+          </div>
+        </div>
+        <label>Email</label>
+        <div class="input-group mt-3">
+          <input type="email" class="form-control" (ngModel)="userEmail">
+          <div class="input-group-addon">
+            <i class="fa fa-key"></i>
+          </div>
+        </div>
+        <div class="input-group mt-3">
+          <button type="button" class="btn btn-primary btn-block">Ragistor</button>
+        </div>
+        <div class="input-group mt-3">
+            <button type="button" class="btn btn-link btn-block">Login</button>
+          </div>
+      </div>
+  </div>
+</div>
+{{userName}}{{userPass}}

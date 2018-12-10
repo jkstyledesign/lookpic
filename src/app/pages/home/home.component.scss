@@ -1,0 +1,38 @@
+@keyframes slidein {
+    0%   {margin-bottom:-59px;} 
+    80% {margin-bottom:0px;}
+    90% {margin-bottom:5px;}
+    100% {margin-bottom:0px;}
+}
+.home-carousel {
+    overflow: hidden;
+}
+.features-box {
+    position: relative;
+    margin-top: 0px;  
+    .features-body {
+        position: absolute;
+        bottom: 0px; 
+        background: #fff;
+        border-radius: 3px 3px 0 0;
+        min-height: 200px;
+        width: 100%;
+        padding: 15px; 
+
+        transition:  0.3s;  
+        animation-name: slidein;
+        animation-duration: 0.3s;
+    }
+}
+.features-action {
+    position: absolute;
+    right: 30px;
+    bottom: 30px; 
+    .btn {
+        background: #fff;
+        color:#000;
+        border-radius: 50px; 
+        height: 50px;
+        width: 50px;
+    }
+}

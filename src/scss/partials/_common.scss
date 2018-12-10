@@ -1,0 +1,45 @@
+// For search component 
+.header-search { 
+    .input-group {
+        .form-control {
+            border-right: 0;
+            background-color: lighten($white, $amount: 50);
+            outline:none;
+            box-shadow: none; 
+            transition: width 0.2s; 
+            border:none;
+            @include media-breakpoint-up(lg) {
+                width: 100px;
+                &:focus {
+                   width: 200px; 
+                }
+            }
+        }
+        .input-group-addon {
+            .btn {
+                border-radius: 0 3px 3px 0;
+                background: lighten($white, $amount: 50);
+            }
+        }
+    }
+}
+
+.carousel-indicators {
+    flex-direction: column;
+    top: 0;
+    left: auto;
+    right: 60px;
+    margin:0;
+    width: 55px;
+    li {
+       transition: all 0.2s;
+       margin-bottom:9px; 
+       &.active {
+           width: 51px;
+       }
+    }
+}
+.section {
+   padding-top: $basePadding; 
+   padding-bottom: $basePadding; 
+}

@@ -1,0 +1,29 @@
+.login-body {
+    background: #FFBC42; 
+    background: -webkit-linear-gradient(to right, #FA3269, #FFBC42);  
+    background: linear-gradient(to right, #FA3269, #FFBC42); 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    .login-box {
+        background-color: #fff;
+        box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.32);
+        border-radius: 10px; 
+        padding: 30px;  
+        .input-group {
+            .form-control {
+                border-color: #fd934d;
+                height: calc(2.25rem + 8px);
+            }  
+            .input-group-addon {
+                display: flex;
+                align-items: center;
+                padding: 10px 13px;
+                background: #fd934d;
+                border-radius: 0 6px 5px 0;
+                width: 38px; 
+            } 
+        } 
+    }
+}

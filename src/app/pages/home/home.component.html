@@ -1,0 +1,25 @@
+<div class="home-carousel">
+  <app-carousel [showCaption]='showCaption'></app-carousel>
+
+  <div class="container">
+     <div class="features-box animated" *ngIf="featuresBox"> 
+          <div class="features-body">
+              <app-features></app-features>
+          </div>
+     </div>
+  </div>
+    <div class="features-action">
+      <button class="btn btn-circle" (click)="featuresAction()"> <i class="fa" [class.fa-bars]="!featuresBox" [class.fa-close]="featuresBox"></i> </button>
+    </div>
+</div>
+<div class="section photographers">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <h1>Photographers</h1>
+        <p>"There are no rules for good photographs there are only good photographs."</p>
+      </div>
+    </div>
+    <app-photographer></app-photographer>
+  </div>
+</div>

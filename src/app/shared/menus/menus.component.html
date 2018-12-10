@@ -1,0 +1,15 @@
+<ng-template ngFor let-link [ngForOf]="links">  
+  <li class="nav-item active" *ngIf="!link.dropdown">
+      <a class="nav-link" [href]="link.url">{{link.page_name}}</a>
+  </li>  
+  <li ngbDropdown class="nav-item dropdown" *ngIf="link.dropdown">
+    <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#">
+        {{link.page_name}}
+    </a>
+   <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+     <ng-template ngFor let-link [ngForOf]="link.dropdown">
+       <a class="dropdown-item" [href]="link.url">{{link.page_name}}</a>
+     </ng-template>
+   </div>
+  </li>
+</ng-template>
