@@ -11,5 +11,7 @@
     <br>
     <input type="text" class="form-control" [(ngModel)]="Status">
     <br>
-    <button type="button" class="btn btn-info" (click)="update(Id,Title,Status)">Add new</button>
+    <button type="button" class="btn btn-info" (click)="post(Id,Title,Status)">post</button>
+    <button type="button" class="btn btn-info" (click)="put(Id,Title,Status)">update</button>
+    <button type="button" class="btn btn-info" (click)="delete(Id,Title,Status)">delete</button>
 </div>
