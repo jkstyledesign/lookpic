@@ -1,4 +1,15 @@
-<app-header></app-header> 
+<!-- <app-header></app-header> 
 <main>
     <router-outlet></router-outlet>
-</main>
+</main> -->
+
+<div class="col-md-5">
+    <br>
+    <input type="text" class="form-control" [(ngModel)]="Id" >
+    <br>
+    <input type="text" class="form-control" [(ngModel)]="Title">
+    <br>
+    <input type="text" class="form-control" [(ngModel)]="Status">
+    <br>
+    <button type="button" class="btn btn-info" (click)="update(Id,Title,Status)">Add new</button>
+</div>

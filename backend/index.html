@@ -1,0 +1,42 @@
+<html>
+
+<body>
+   <form method="POST" action="http://localhost:3000/Tasks">
+        <input type="text" name="Id">
+        <input type="text" name="Title">
+        <input type="text" name="Status"> 
+    <input type="submit" value="Insert">
+     </form> 
+</body>
+
+<script>
+
+    function postData() {
+        var data = JSON.stringify({
+            "Id": "21",
+            "Title": "By Sameer",
+            "Status": "khk"
+        });
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                console.log(this.responseText);
+            }
+        });
+
+        xhr.open("POST", "http://localhost:3000/Tasks");
+        xhr.setRequestHeader("content-type", "application/json");
+        xhr.setRequestHeader("cache-control", "no-cache");
+        xhr.setRequestHeader("postman-token", "c26639b5-6d11-c2da-2e9f-081aacd892d3");
+        xhr.setRequestHeader("Access-Control-Allow-Origin", "c26639b5-6d11-c2da-2e9f-081aacd892d3");
+        'Access-Control-Allow-Origin'
+        xhr.send(data);
+    }
+
+
+</script>
+
+</html>
