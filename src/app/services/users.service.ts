@@ -33,7 +33,7 @@ export class UsersService {
   ]
   userList = [
     {
-      'ProPic' : 'assets/images/users/user1.jpg',
+      'propic' : 'assets/images/users/user1.jpg',
       'name' : 'Harinder Chahal',
       'gender' : 'female',
       'location' : 'Kuala Lumpur',
@@ -47,7 +47,7 @@ export class UsersService {
       ]
     },
     {
-      'ProPic' : '',
+      'propic' : '',
       'name' : 'Harinder Chahal',
       'gender' : 'male',
       'location' : 'Kuala Lumpur',
@@ -61,7 +61,7 @@ export class UsersService {
       ]
     },
     {
-      'ProPic' : '',
+      'propic' : '',
       'name' : 'Harinder Chahal',
       'gender' : 'male',
       'location' : 'Kuala Lumpur',
@@ -75,7 +75,7 @@ export class UsersService {
       ]
     },
     {
-      'ProPic' : '',
+      'propic' : '',
       'name' : 'Harinder Chahal',
       'gender' : 'female',
       'location' : 'Kuala Lumpur',
@@ -89,7 +89,7 @@ export class UsersService {
       ]
     },
     {
-      'ProPic' : '',
+      'propic' : '',
       'name' : 'Harinder Chahal',
       'gender' : 'male',
       'location' : 'Kuala Lumpur',
@@ -103,7 +103,7 @@ export class UsersService {
       ]
     },
     {
-      'ProPic' : '',
+      'propic' : '',
       'name' : 'Harinder Chahal',
       'gender' : 'male',
       'location' : 'Kuala Lumpur',
@@ -117,7 +117,7 @@ export class UsersService {
       ]
     },
     {
-      'ProPic' : '',
+      'propic' : '',
       'name' : 'Harinder Chahal',
       'gender' : 'male',
       'location' : 'Kuala Lumpur',
@@ -131,7 +131,7 @@ export class UsersService {
       ]
     },
     {
-      'ProPic' : '',
+      'propic' : '',
       'name' : 'Harinder Chahal',
       'gender' : 'male',
       'location' : 'Kuala Lumpur',
@@ -145,7 +145,7 @@ export class UsersService {
       ]
     },
     {
-      'ProPic' : '',
+      'propic' : '',
       'name' : 'Harinder Chahal',
       'gender' : 'male',
       'location' : 'Kuala Lumpur',

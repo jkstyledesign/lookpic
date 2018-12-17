@@ -3,15 +3,50 @@
     <router-outlet></router-outlet>
 </main> -->
 
-<div class="col-md-5">
-    <br>
-    <input type="text" class="form-control" [(ngModel)]="Id" >
-    <br>
-    <input type="text" class="form-control" [(ngModel)]="Title">
-    <br>
-    <input type="text" class="form-control" [(ngModel)]="Status">
-    <br>
-    <button type="button" class="btn btn-info" (click)="post(Id,Title,Status)">post</button>
-    <button type="button" class="btn btn-info" (click)="put(Id,Title,Status)">update</button>
-    <button type="button" class="btn btn-info" (click)="delete(Id,Title,Status)">delete</button>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <br>
+            <input type="hidden" class="form-control" [(ngModel)]="Id" >
+            <br>
+            <label>Title</label>
+            <input type="text" class="form-control" [(ngModel)]="Title">
+            <br>
+            <label>Status</label>
+            <input type="text" class="form-control" [(ngModel)]="Status">
+            <br>
+            <button type="button" class="btn btn-info" (click)="post()" *ngIf="!btn_edit">Post</button>
+            <button type="button" class="btn btn-info" (click)="update()" *ngIf="btn_edit">Update</button>
+            
+        
+            <div class="alert alert-success" *ngIf="successfully_post">
+                <strong>Success!</strong> Indicates a successful or positive action.
+            </div>
+            <div class="alert alert-warning" *ngIf="warning_post">
+                <strong>Warning!</strong> Indicates a warning that might need attention.
+            </div>
+        </div> 
+        <div class="mt-5 col-sm-6" >
+            <table class="table">
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                <tr *ngFor="let task of tasks">
+                    <td>{{task.Id}}</td>
+                    <td>{{task.Title}}</td>
+                    <td>{{task.Status}}</td> 
+                    <td>
+                        <button type="button" class="btn btn-info mr-1" (click)="delete(''+task.Id+'')"><i class="fa fa-trash"></i></button>
+                        <button type="button" class="btn btn-info mr-1" (click)="edit(''+task.Id+'',''+task.Title+'',''+task.Status+'')"> <i class="fa fa-edit"></i></button>
+    
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+    </div>
 </div>
+

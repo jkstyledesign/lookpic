@@ -2,7 +2,7 @@
   <div class="col-md-3" *ngFor="let user of userList | slice:0:8">
     <div class="user-box">
       <div class="user-img">
-          <img src="{{user.ProPic||'assets/images/users/'+user.gender+'.jpg'}}" class="img-fluid">
+          <img src="{{user.propic||'assets/images/users/'+user.gender+'.jpg'}}" class="img-fluid">
       </div> 
          <h2 class="user-name">{{user.name}}</h2> 
          <p class="user-location">{{user.location}}</p> 
